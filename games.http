@@ -2,3 +2,15 @@ GET http://localhost:5035/games
 
 ###
 GET http://localhost:5035/games/2
+
+###
+POST http://localhost:5035/games
+content-type: application/json
+
+  {
+    "id": 2,
+    "name": "some name",
+    "genre": "some gere",
+    "price": 0.0,
+    "releaseDate": "2000-01-01"
+  }
