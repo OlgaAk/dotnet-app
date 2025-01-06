@@ -22,6 +22,6 @@ List<GameDto> games = [
 
 app.MapGet("games", () => games);
 
-app.MapGet("game/{id}", (int id) => games.Find(game => game.Id == id));
+app.MapGet("games/{id}", (int id) => games.Find(game => game.Id == id));
 
 app.Run();
